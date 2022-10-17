@@ -21,3 +21,14 @@
 (1) We need to use both WSGI and ASGI <br />
 (2) WSGI for static pages <br />
 (3) ASGI for asyn data reading and sending <br />
+
+
+
+# Authentication Process
+# Client Sign in
+# sends API request to get access token and refresh token
+# use access token to access Websocket
+# open connection with websocket
+# Access token will expire in 5 min
+# Frontend needs to send refresh token every 4 min (Needs to anticipate in Network Delay and etc delay)
+# Websocket should temperarly check in anyone in the websocket has expired token, and if so, kick them out.
