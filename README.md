@@ -25,10 +25,10 @@
 
 
 # Authentication Process
-# Client Sign in
-# sends API request to get access token and refresh token
-# use access token to access Websocket
-# open connection with websocket
-# Access token will expire in 5 min
-# Frontend needs to send refresh token every 4 min (Needs to anticipate in Network Delay and etc delay)
-# Websocket should temperarly check in anyone in the websocket has expired token, and if so, kick them out.
+Client Sign in <br />
+sends API request to get access token and refresh token <br />
+use access token to access Websocket <br />
+open connection with websocket <br />
+Access token will expire in 5 min <br />
+Frontend needs to send refresh token every 4 min (Needs to anticipate in Network Delay and etc delay) <br />
+Websocket should temperarly check in anyone in the websocket has expired token, and if so, kick them out. <br />
