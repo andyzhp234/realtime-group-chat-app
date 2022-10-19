@@ -6,9 +6,9 @@ export default function Chatroom() {
   const navigate = useNavigate();
   const {JWTTokens, logoutUser, user} = useContext(AuthContext)
   let roomname = window.location.pathname.split('/')[2];
-  let hostname = '127.0.0.1:8000';
+  let hostname = 'realtime-group-chat-andyzhp.herokuapp.com';
   let token = JWTTokens.access
-  let wsURL = 'ws://'+hostname+'/ws/chat/'+roomname+'/?token='+token
+  let wsURL = 'wss://'+hostname+'/ws/chat/'+roomname+'/?token='+token
   
   const messagesEndRef = useRef(null)
   const scrollToBottom = () => {
