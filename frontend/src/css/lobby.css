@@ -1,0 +1,98 @@
+.lobby_home{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fredoka One', cursive;
+  background-size: cover;
+
+}
+
+.lobby{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+.room{
+  width: 22%;
+  max-width: 1000px;
+  height: 70%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px rgb(97, 92, 92);
+  color: white;
+  font-size: 20px;
+  background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGdhbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+}
+
+.room1{
+  width: 22%;
+  max-width: 1000px;
+  height: 70%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px rgb(97, 92, 92);
+  background-size: cover;
+  color: white;
+  font-size: 20px;
+  background-image: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+}
+
+.room2{
+  width: 22%;
+  max-width: 1000px;
+  height: 70%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px rgb(97, 92, 92);
+  color: white;
+  font-size: 20px;
+  background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fG1vdmllfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+}
+.room3{
+  width: 22%;
+  max-width: 1000px;
+  height: 70%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px rgb(97, 92, 92);
+  color: white;
+  font-size: 20px;
+  background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1458560871784-56d23406c091?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bXVzaWN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+}
+
+
+.logout_button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Fredoka One', cursive;
+  cursor: pointer;
+  background-color: rgb(240, 113, 113);
+}

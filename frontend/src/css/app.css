@@ -1,0 +1,10 @@
+@import './login.css';
+@import './signup.css';
+@import './lobby.css';
+@import './chatroom.css';
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+  margin: 0px;
+}
+

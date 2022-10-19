@@ -1,0 +1,109 @@
+.chatroom_home{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fredoka One', cursive;
+}
+
+.chatroom_main{
+  width: 80%;
+  max-width: 900px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.chatroom_title{
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.chat_window{
+  height: 80%;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border: solid 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 5px rgb(97, 92, 92);
+}
+
+
+.typing{
+  height: 10%;
+  width: 99%;
+  border: solid 1px;
+  padding-left: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: rgb(226, 226, 226);
+  box-shadow: 5px 5px 5px rgb(97, 92, 92);
+}
+
+.Back_button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Fredoka One', cursive;
+  cursor: pointer;
+  background-color: rgb(113, 240, 134);
+}
+
+.joined_messages{
+  color: grey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.my_message{
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #c0c0c0;
+  position: relative;
+}
+
+.others_message{
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgb(224, 224, 224);
+  position: relative;
+}
+
+.message_date{
+  position: absolute;
+  right: 2%;
+  bottom: 0;
+  font-size: 15px;
+}
+
+.message{
+  margin-left: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
