@@ -29,7 +29,7 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
  3. Track Conversations and Users in Chat
  4. Record / Save conversations
  5. Delete / Edit message  (Optional)
- 6. More...
+ 6. More....
 
 
 ##  Web Sockets
