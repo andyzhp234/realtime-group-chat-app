@@ -98,7 +98,7 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
       username=self.scope["user"].username,
       content=data,
       chatRoom=self.room_group_name,
-      timestamp=datetime.datetime.now(),
+      timestamp=str(datetime.datetime.now()),
     )
 
   async def new_message(self, data):

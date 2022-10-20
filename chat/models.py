@@ -8,4 +8,5 @@ class Message(models.Model):
   username = models.CharField(max_length=120)
   content = models.TextField()
   icons = models.CharField(max_length=120)
-  timestamp = models.DateTimeField(auto_now_add=True)
+  # timestamp = models.DateTimeField(auto_now_add=True)
+  timestamp = models.CharField(max_length=120)
