@@ -190,8 +190,14 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
 <br/>
 <br/>
 
+
 ### Redis as Channel
-For channel
+ 1. What role does Redis serve in Django Channels??
+ 2. Redis as django channel layer is recommanded by Django Official documentations
+ 3. The primary purpose of redis in django-channel_layers is to store the necessary information required for different instances of consumers to communicate with one another.
+ 4. Redis is used as a storage layer for channel names and group names. These are stored within Redis so that they can be accessed from any consumer instance. 
+
+   <br/>
 
     CHANNEL_LAYERS = {
 	    "default": {
@@ -202,7 +208,8 @@ For channel
 		    },
 	    },
     }
-    
+
+
 
 
 
@@ -232,4 +239,4 @@ For channel
  7. Websocket should temperarly check in anyone in the websocket has expired token, and if so, kick them out.  
 
 
-## The UML Diagrame
+## The Design Diagram
