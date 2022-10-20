@@ -238,5 +238,16 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
  6. Frontend needs to send refresh token every 4 min (Needs to anticipate in Network Delay and etc delay)
  7. Websocket should temperarly check in anyone in the websocket has expired token, and if so, kick them out.  
 
+## Async VS Sync
+1. Sync (HTTP Request) <br/>
+2. Send -> Stop -> Wait for Reply <br/>
+
+<br/>
+
+1. Async (Websocket) <br/>
+2. Send -> Carry on -> Back to process if ready <br/>
+
+<br/>
+
 
 ## The Design Diagram
