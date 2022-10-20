@@ -67,15 +67,14 @@ export default function Login() {
             />
           </div>
 
-          <button type="button" className='login_button' onClick={demoUserLogin}>Demo User</button>
-
           <button type="submit" className='login_button'>Login</button>
 
+          <button type="button" className='login_button' onClick={demoUserLogin}>Demo User</button>
+          
           <button type="button" className='login_button' onClick={() => navigate('/signup')}>
             Sign Up
           </button>
-    
-  
+
         </div>
         <div className='login_img'></div>
       </form>

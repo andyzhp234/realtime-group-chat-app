@@ -32,14 +32,14 @@ export default function Signup() {
     } else {
       // axios.post('http://127.0.0.1:8000/api/signup/', form)
       axios.post('https://realtime-group-chat-andyzhp.herokuapp.com/api/signup/', form)
-      .then(function (response) {
-        // handle success
-        navigate('/');
-      })
-      .catch(function (error) {
-        // handle error
-        alert('ERROR: SIGNUP FAILED!')
-      })
+        .then(function (response) {
+          // handle success
+          navigate('/');
+        })
+        .catch(function (error) {
+          // handle error
+          alert('ERROR: SIGNUP FAILED!')
+        })
     }
   }
   return (
@@ -96,7 +96,7 @@ export default function Signup() {
           </div>
 
 
-          <button type="button" className='login_button'>
+          <button type="submit" className='login_button'>
             Sign Up
           </button>
 
