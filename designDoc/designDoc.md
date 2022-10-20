@@ -251,3 +251,9 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
 
 
 ## The Design Diagram
+
+<img src="https://github.com/andyzhp234/realtime-group-chat-app/blob/main/designDoc/websocket_connection.png" alt="" />
+
+<img src="https://github.com/andyzhp234/realtime-group-chat-app/blob/main/designDoc/django_channel.png" alt="" />
+
+<img src="https://github.com/andyzhp234/realtime-group-chat-app/blob/main/designDoc/flow_chart.png" alt="" />
