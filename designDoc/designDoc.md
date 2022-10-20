@@ -7,6 +7,8 @@ Author: Haopeng Zeng  <br/>
 
 Date: 10/19/2022 (Updated)  <br/>
 
+Overall a very challenging and fun project!  <br/>
+
 ---
 # :man_technologist: Overview
 I have started this project with the purpose of learning how to develop a mid/high-level complexity Web Application that supports real-time communcations using Websockets and HTTP protocol. For Frontend, I used React to implement the UI and connections to backend websocket. For backend, I used Django and Django Restframework for REST APIs and Websocket connections (Django channel).
