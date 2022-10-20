@@ -1,3 +1,4 @@
+
 # Design doc
 
 # Realtime-group-chat-app
@@ -18,6 +19,34 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
 
 ---
 # Problem Statement
+
+## Initial Project Specifications
+
+ 1. Real Live Chat
+ 2. User Registration
+ 3. Track Conversations and Users in Chat
+ 4. Record / Save conversations
+ 5. Delete / Edit message  (Optional)
+ 6. More...
+
+
+##  Web Sockets
+
+ 1. Needs to utilitze web socket for real time application
+ 2. Web protocal running over TCP
+ 3. Allows us to create a asyn environment
+ 4. Bi-directional (where HTTP is one-directional). Server and client can send message at the same time.
+ 5. Socket is full-duplex
+
+
+## WSGI and ASGI
+
+ 1. We need to use both WSGI and ASGI
+ 2. WSGI for static pages
+ 3. ASGI for asyn data reading and sending
+
+
+
 ## Audience
 | Who / Why?| Explanation |
 | --- | --- |
@@ -190,5 +219,17 @@ For channel
 
 ---
 # Section 3: Key High-Level and Architectural Decisions
+
+
+## Authentication Process
+
+ 1. Client Sign in
+ 2. Sends API request to get access token and refresh token
+ 3. Use access token to access Websocket
+ 4. Open connection with websocket (Pass JWT through URL query)
+ 5. Access token will expire in 5 min
+ 6. Frontend needs to send refresh token every 4 min (Needs to anticipate in Network Delay and etc delay)
+ 7. Websocket should temperarly check in anyone in the websocket has expired token, and if so, kick them out.  
+
 
 ## The UML Diagrame
