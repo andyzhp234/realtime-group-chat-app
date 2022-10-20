@@ -39,7 +39,8 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
         "firstname" : "old Data",
         "username" : "old Data",
         "message_type" : "old_data",
-        "timestamp" : datetime.datetime.now(),
+        # "timestamp" : datetime.datetime.now(),
+        "timestamp" : "asdasd",
       })
       
       # after TCP connection is set, we can send infos to Clients
@@ -48,7 +49,8 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
         "firstname" : self.scope["user"].first_name,
         "username" : self.scope["user"].username,
         "message_type" : "joined_chat",
-        "timestamp" : datetime.datetime.now(),
+        # "timestamp" : datetime.datetime.now(),
+        "timestamp" : "asdasd",
       })
 
   
@@ -86,7 +88,8 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
       "firstname" : self.scope["user"].first_name,
       "username" : self.scope["user"].username,
       "message_type" : "joined_chat",
-      "timestamp" : datetime.datetime.now(),
+      # "timestamp" : datetime.datetime.now(),
+      "timestamp" : "asdasd",
     })
     await self.channel_layer.group_discard(self.room_group_name, self.channel_name)
 
@@ -116,7 +119,8 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
       "firstname" : self.scope["user"].first_name,
       "username" : self.scope["user"].username,
       "message_type" : 'chat',
-      "timestamp" : datetime.datetime.now(),
+      # "timestamp" : datetime.datetime.now(),
+      "timestamp" : "asdasd",
     })
 
 
