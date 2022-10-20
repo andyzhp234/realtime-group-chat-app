@@ -3,7 +3,10 @@ from channels.generic.websocket import AsyncWebsocketConsumer
 from django.contrib.auth.models import AnonymousUser
 from .models import Message
 from channels.db import database_sync_to_async
-import datetime
+from datetime import datetime
+from pytz import timezone, utc
+
+
 # why channel? Django itself don't support websocket, needs to use channel library
 
 # Channels + WebSockets together to achieve two way communications
@@ -39,7 +42,7 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
         "firstname" : "old Data",
         "username" : "old Data",
         "message_type" : "old_data",
-        "timestamp" : str(datetime.datetime.now()),
+        "timestamp" : str(self.get_pst_time()),
       })
       
       # after TCP connection is set, we can send infos to Clients
@@ -48,10 +51,16 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
         "firstname" : self.scope["user"].first_name,
         "username" : self.scope["user"].username,
         "message_type" : "joined_chat",
-        "timestamp" : str(datetime.datetime.now()),
+        "timestamp" : str(self.get_pst_time()),
       })
 
-  
+  def get_pst_time():
+    date_format='%m_%d_%Y_%H_%M_%S_%Z'
+    date = datetime.now(tz=utc)
+    date = date.astimezone(timezone('US/Pacific'))
+    pstDateTime=date.strftime(date_format)
+    return pstDateTime
+
   @database_sync_to_async
   def fetch_message(self):
     message = Message.objects.order_by('-timestamp').filter(chatRoom=self.room_group_name)[:10]
@@ -86,7 +95,7 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
       "firstname" : self.scope["user"].first_name,
       "username" : self.scope["user"].username,
       "message_type" : "joined_chat",
-      "timestamp" : str(datetime.datetime.now()),
+      "timestamp" : str(self.get_pst_time()),
     })
     await self.channel_layer.group_discard(self.room_group_name, self.channel_name)
 
@@ -98,7 +107,7 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
       username=self.scope["user"].username,
       content=data,
       chatRoom=self.room_group_name,
-      timestamp=str(datetime.datetime.now()),
+      timestamp=str(self.get_pst_time()),
     )
 
   async def new_message(self, data):
@@ -117,7 +126,7 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
       "firstname" : self.scope["user"].first_name,
       "username" : self.scope["user"].username,
       "message_type" : 'chat',
-      "timestamp" : str(datetime.datetime.now()),
+      "timestamp" : str(self.get_pst_time()),
     })
 
 
