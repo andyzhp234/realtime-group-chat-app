@@ -12,13 +12,13 @@ Currently the application only supports 4 chatroom, which are Game, Study, Movie
 I put a lot of effort in this Project and I hope that you could enjoy it.
 
 # User Experience
-<img src="https://github.com/andyzhp234/realtime-group-chat-app/blob/main/designDoc/signup.JPG" alt="" />
+<img src="./signup.JPG" alt="" />
 
-<img src="https://github.com/andyzhp234/realtime-group-chat-app/blob/main/designDoc/login.JPG" alt="" />
+<img src="login.JPG" alt="" />
 
-<img src="https://github.com/andyzhp234/realtime-group-chat-app/blob/main/designDoc/lobby.JPG" alt="" />
+<img src="lobby.JPG" alt="" />
 
-<img src="https://github.com/andyzhp234/realtime-group-chat-app/blob/main/designDoc/chatroom.JPG" alt="" />
+<img src="chatroom.JPG" alt="" />
 
 
 # Technologies
