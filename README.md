@@ -12,13 +12,13 @@ Currently the application only supports 4 chatroom, which are Game, Study, Movie
 I put a lot of effort in this Project and I hope that you could enjoy it.
 
 # User Experience
-<img src="./signup.JPG" alt="" />
+<img src="./project_images/signup.JPG" alt="" />
 
-<img src="login.JPG" alt="" />
+<img src="./project_images/login.JPG" alt="" />
 
-<img src="lobby.JPG" alt="" />
+<img src="./project_images/lobby.JPG" alt="" />
 
-<img src="chatroom.JPG" alt="" />
+<img src="./project_images/chatroom.JPG" alt="" />
 
 
 # Technologies
