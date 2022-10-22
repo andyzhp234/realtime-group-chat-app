@@ -175,6 +175,10 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
 
 # Section 2: HOW
 
+
+### Deployment: Heroku
+
+
 ### Third-Party Libraries
 | Third-party library name and version | Why it is needed |
 |--|--|
