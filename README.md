@@ -1,4 +1,4 @@
-# realtime-group-chat-app
+# Rooms (Realtime-Group-Chat-App)
 
 DEMO: <a href="https://realtime-group-chat-andyzhp.herokuapp.com/"> Visit DEMO <a/>
 
