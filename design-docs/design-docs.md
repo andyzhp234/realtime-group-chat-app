@@ -26,14 +26,14 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
 # Problem Statement
 
 ## Initial Project Specifications
-
- 1. Real Time Group Chat
- 2. User Registration
- 3. Track Conversations and Users in Chat
- 4. Record / Save conversations
- 5. Delete / Edit message  (Optional)
- 6. AI Bot Chat Room??
- 7. Better Chat Interface
+ 
+ 1. Better Chat Interface
+ 2. Real Time Group Chat
+ 3. User Registration
+ 4. Track Conversations and Users in Chat
+ 5. Record / Save conversations
+ 6. Delete / Edit message  (Optional)
+ 7. AI Bot Chat Room??
  8. Send Emojis
  9. Private Chat room?
  10. Current Online Users??
