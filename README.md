@@ -22,7 +22,7 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
 
 
 # Technologies
-
+ - Heroku
  - REACT
  - REACT Context
  - REACT Hook
