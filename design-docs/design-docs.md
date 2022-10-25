@@ -27,7 +27,7 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
 
 ## Initial Project Specifications
 
- 1. Real Live Chat
+ 1. Real Time Group Chat
  2. User Registration
  3. Track Conversations and Users in Chat
  4. Record / Save conversations
