@@ -33,13 +33,14 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
  4. Track Conversations and Users in Chat
  5. Record / Save conversations
  6. Delete / Edit message  (Optional)
- 7. AI Bot Chat Room??
- 8. Send Emojis
- 9. Private Chat room?
- 10. Current Online Users??
- 11. Icons
- 12. Send Images
- 13. More
+ 7. Zoom Video Room
+ 8. AI Bot Chat Room
+ 9. Send Emojis
+ 10. Private Chat room
+ 11. Current Online Users??
+ 12. Icons
+ 13. Send Images
+ 14. More
 
 
 ##  Web Sockets
