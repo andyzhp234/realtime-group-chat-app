@@ -32,7 +32,14 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
  3. Track Conversations and Users in Chat
  4. Record / Save conversations
  5. Delete / Edit message  (Optional)
- 6. More....
+ 6. AI Bot Chat Room??
+ 7. Better Chat Interface
+ 8. Send Emojis
+ 9. Private Chat room?
+ 10. Current Online Users??
+ 11. Icons
+ 12. Send Images
+ 13. More
 
 
 ##  Web Sockets
